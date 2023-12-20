@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* .nav{
+    position: sticky;
+    top: 0px;
+    height: 5vh;
+} */
+.nav ul{
+    width: 100vw;
+    background-color:#3a3b3c;
+    text-decoration: none;
+}
+
+.nav li a{
+    color: white;
+    margin-left: 20px;
+}
+
+ul li{
+    display: inline-block;
+    padding: 10px;
+    font-size: small;
+    color: white;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background-color: #3a3b3c;
+    color: white;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signUpPage{
+    width: 100vw;
+    height: 80vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #bdbdbd;
+
+}
+.signup{
+    /* width: 20vw; */
+    height: 50vh;
+    border-radius: 30px;
+    background-color: #424242;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.signup h2{
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+.signup input{
+    width: 16vw;
+    height: 3vh;
+    margin-top: 5px;
+    padding: 3px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: x-small;
+    font-family: "merienda";
+    border-radius: 5px;
+}
+.signup input::placeholder{
+    color: black;
+    font-size: x-small;
+}
+
+.signup input:focus{
+    border: 0px;
+    border-bottom: 2px solid black;
+    font-size: x-small;
+    font-family: "merienda";
+}
+.signup button{
+    margin-top: 20px;
+    background-color: green;
+    color: aliceblue;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    font-family: "merienda";
+    font-size: x-small;
+    border-radius: 5px;
+}
+.signup button:hover{
+    color: aliceblue;
+    font-size: small;
+    transition: all 0.2s ease-in-out ;
+}
+
+
+
+
+/* login */
+.loginPage,.add-product,.update-product{
+    width: 100vw;
+    height: 80vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #bdbdbd;
+}
+.login,.add,.update{
+    width: 20vw;
+    height: 50vh;
+    border-radius: 30px;
+    background-color: #424242;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.login h2 , .add h2,.update h2{
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+.login input,.add input,.update input{
+    width: 16vw;
+    height: 3vh;
+    margin: 5px;
+    padding: 3px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: x-small;
+    font-family: "merienda";
+    border-radius: 5px;
+}
+.login input::placeholder,.add input::placeholder{
+    color: black;
+    font-size: x-small;
+}
+
+.login input:focus{
+    border: 0px;
+    border-bottom: 2px solid black;
+    font-size: x-small;
+    font-family: "merienda";
+}
+.login button,.add button,.update button{
+    margin-top: 20px;
+    margin-bottom: 7px;
+    background-color: green;
+    color: aliceblue;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    font-family: "merienda";
+    font-size: x-small;
+    border-radius: 5px;
+}
+.login button:hover, .add button:hover{
+    color: aliceblue;
+    font-size: small;
+    transition: all 0.2s ease-in-out ;
+}
+.update button:hover{
+    font-size: 11px;
+    transition: all 0.2s ease-in-out ;
+}
+.login-error-span{
+    color: red;
+    font-size: 8px;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: -5px;
+}
+
+.products{
+    text-align: center;
+    margin-top: 20px;
+}
+.products ul li{
+    display: inline-block;
+    width: 130px;
+    color: #0b0909;
+    border: #0f0f0f 1px solid;
+}
+
+.search-box{
+    width: 20vw;
+    /* height: 5vh; */
+    margin: 20px;
+    border-radius: 15px;
+    padding: 10px;
+    font-family: "Merienda";
+    outline: none;
+    border: 2px solid #212121;
+}
+.search-box:focus{
+    outline: none;
+    font-size: small;
+}
+
+
+@media only screen and (min-width:0px) and (max-width:768px){
+    .signup{
+        /* background-color: red; */
+        width: 70vw;
+        height: 50vh;
+    }
+    .signup input{
+        width: 50vw;
+    }
+    .login,.add,.update{
+        /* background-color: red; */
+        width: 70vw;
+        height: 50vh;
+    }
+    .login input ,.add input,.update input{
+        width: 50vw;
+    }
+    .products ul li{
+        width: 40px;
+        margin: 0px;
+        font-size: xx-small;
+    }
+    .products button{
+        width: 10px;
+        font-size: 4px;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    .signup{
+        /* background-color: red; */
+        width: 50vw;
+    }
+    .signup input{
+        width: 30vw;
+    }
+    .login,.add{
+        /* background-color: red; */
+        width: 50vw;
+    }
+    .login input,.add input{
+        width: 30vw;
+    }
+    .products ul li{
+        width: 100px;
+    }
+}
+
+@media only screen and (min-width:1024px)  {
+    .signup{
+        /* background-color: red; */
+        width: 30vw;
+        height: 50vh;
+    }
+    .signup input{
+        width: 20vw;
+    }
+    .login{
+        /* background-color: red; */
+        width: 30vw;
+        height: 50vh;
+    }
+    .login input{
+        width: 20vw;
+    }
+    .products ul li button{
+        width: 20px;
+    }
+}
+
+@media (max-height:480px){
+    .signup{
+        height: 65vh;
+    }
+    .login{
+        height: 65vh;
+    }
+    .add,.update{
+        height: 70vh;
+    }
+}
+
+@media (max-height:350px){
+    .update{
+        height: 80vh;
+    }
+}
+
